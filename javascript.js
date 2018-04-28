@@ -67,7 +67,7 @@ function validatePassword()
     {
         errors.push("Password must be at least 8 character");
     }
-    if (errors.length > 0) {
+    if (errors.length > 1) {
         validationField.innerHTML = errors.join('');
     
         return false;
