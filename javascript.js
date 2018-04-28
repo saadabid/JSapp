@@ -55,3 +55,23 @@ function viewPassword(){
         passStatus.className='fa fa-eye';
       }
 }
+
+function validatePassword()
+{
+    var password  = document.getElementById("password");
+    var validationField = document.getElementById("validate-text");
+    var content = password.value;
+    var errors = [];
+
+    if(content.length < 8)
+    {
+        errors.push("Password must be at least 8 character");
+    }
+    if (errors.length > 0) {
+        validationField.innerHTML = errors.join('');
+    
+        return false;
+      }
+    validationField.innerHTML = errors.join('');
+    return true;
+}

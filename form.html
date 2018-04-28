@@ -39,8 +39,8 @@
     <div class="form-group">
         <div class="col-md-5">
         <label class="control-label" for="password">Password</label>
-        <input type="password" class="form-control" id="password" placeholder="Password ..">
-         
+        <input type="password" class="form-control" id="password" onkeyup = "validatePassword();" placeholder="Password ..">
+         <div id="validate-text"></div>
       </div>
       <div class="col-md-1 eye">
       <i id="pass-status" class="fa fa-eye" aria-hidden="true" onclick="viewPassword()"></i> 
