@@ -73,3 +73,9 @@ body{
     font-size: 22px;
     padding: 0px;
 }
+
+#validate-text{
+    font-size: 8px;
+    color: red;
+    font-weight: 600;
+}
